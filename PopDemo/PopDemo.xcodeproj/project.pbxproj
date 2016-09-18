@@ -17,6 +17,7 @@
 		BC41B93A1D8E65BD00BDAF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC41B9381D8E65BD00BDAF54 /* LaunchScreen.storyboard */; };
 		BC41B9451D8E65BE00BDAF54 /* PopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41B9441D8E65BE00BDAF54 /* PopDemoTests.m */; };
 		BC41B9501D8E65BE00BDAF54 /* PopDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41B94F1D8E65BE00BDAF54 /* PopDemoUITests.m */; };
+		BC41B95F1D8E676900BDAF54 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41B95E1D8E676900BDAF54 /* TableViewCell.m */; };
 		E8064EC5ADA7D4DE2F8AC1A0 /* libPods-PopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FA5FBD05CC1F6766FF280A /* libPods-PopDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		BC41B94B1D8E65BE00BDAF54 /* PopDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC41B94F1D8E65BE00BDAF54 /* PopDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopDemoUITests.m; sourceTree = "<group>"; };
 		BC41B9511D8E65BE00BDAF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC41B95D1D8E676900BDAF54 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		BC41B95E1D8E676900BDAF54 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		C329EDCADF8918BC730309F4 /* libPods-PopDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PopDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FA5FBD05CC1F6766FF280A /* libPods-PopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +125,8 @@
 				BC41B92E1D8E65BD00BDAF54 /* AppDelegate.m */,
 				BC41B9301D8E65BD00BDAF54 /* ViewController.h */,
 				BC41B9311D8E65BD00BDAF54 /* ViewController.m */,
+				BC41B95D1D8E676900BDAF54 /* TableViewCell.h */,
+				BC41B95E1D8E676900BDAF54 /* TableViewCell.m */,
 				BC41B9331D8E65BD00BDAF54 /* Main.storyboard */,
 				BC41B9361D8E65BD00BDAF54 /* Assets.xcassets */,
 				BC41B9381D8E65BD00BDAF54 /* LaunchScreen.storyboard */,
@@ -442,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC41B9321D8E65BD00BDAF54 /* ViewController.m in Sources */,
+				BC41B95F1D8E676900BDAF54 /* TableViewCell.m in Sources */,
 				BC41B92F1D8E65BD00BDAF54 /* AppDelegate.m in Sources */,
 				BC41B92C1D8E65BD00BDAF54 /* main.m in Sources */,
 			);
