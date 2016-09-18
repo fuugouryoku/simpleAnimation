@@ -25,7 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 //关键帧动画，将动画中指定的帧作为节点，由core animation自动补全动画
-
+-(void)keyframeAnimation
+{
+    UITextField *textField = [[UITextField alloc]initWithFrame:CGRectMake(100, 200, 200, 40)];
+    textField.secureTextEntry = YES;
+    textField.layer.borderColor = [UIColor grayColor].CGColor;
+    textField.layer.borderWidth =1;
+    [self.view addSubview:textField];
+    
+    CAKeyframeAnimation *keyframeAnimation = [CAKeyframeAnimation animation];
+    
+    
+}
 
 -(void)basicAnimation
 {
