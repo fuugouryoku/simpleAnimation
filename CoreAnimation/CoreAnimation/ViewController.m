@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self keyframeAnimationRound];
-    
+
+       [self animationGroup];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +63,7 @@
     
     CAKeyframeAnimation *keyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
 //    keyframeAnimation.values = @[@0,@10,@-10,@10,@0];
-    keyframeAnimation.repeatDuration = 1;
+    keyframeAnimation.repeatDuration = 3;
 //    keyframeAnimation.keyTimes = @[@0,@(1/6.0),@(2/6.0),@(3/6.0),@(4/6.0)];
     
     keyframeAnimation.path = bezierPath.CGPath;
@@ -101,12 +101,40 @@
     [view.layer addAnimation:animation forKey:@"CABasicAnimation"];
 }
 
+-(void)animationGroup
+{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    
+    CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
+    basicAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(300, 100)];
+    basicAnimation.duration =1;
+    basicAnimation.autoreverses =YES;
+     CAKeyframeAnimation *keyframeAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+    
+    keyframeAnimation.values = @[@0,@(0.8),@0];
+    keyframeAnimation.duration = 2;
+    
+    
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.duration = 2;
+    animationGroup.animations = @[basicAnimation,keyframeAnimation];
+    animationGroup.repeatCount = HUGE_VALF;
+    [view.layer addAnimation:animationGroup forKey:@"CAAnimationGroup"];
+    
+    //在动画组中，动画开始时间为相对时间，添加到layer上的动画的开始时间为绝对时间，需要CACurrentMediaTime获取当前时间
+}
+
+
+
 #pragma -动画代理方法
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
     UIView *basicAnimationView = [self.view viewWithTag:100];
     basicAnimationView.layer.backgroundColor = [UIColor greenColor].CGColor ;
 }
+
 
 
 @end
