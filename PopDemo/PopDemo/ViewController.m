@@ -48,7 +48,7 @@
     
     POPAnimatableProperty *customAnimation = [POPAnimatableProperty propertyWithName:@"foo" initializer:^(POPMutableAnimatableProperty *prop) {
         prop.writeBlock = ^(id obj, const CGFloat values[]){
-            label.text = [NSString stringWithFormat:@"%02ld:%02ld:%ld",(NSInteger) (values[0]/60),((NSInteger)(values[0])%60),(NSInteger)(values[0] * 100.0) % 100];
+            label.text = [NSString stringWithFormat:@"%02ld:%02ld:%ld",(NSInteger) (values[0]/60),((NSInteger)(values[0])%60),(NSInteger)(values[0] * 1000.0) % 1000];
         
             
         };
