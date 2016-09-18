@@ -17,13 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self basicAnimation];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//关键帧动画，将动画中指定的帧作为节点，由core animation自动补全动画
+
 
 -(void)basicAnimation
 {
