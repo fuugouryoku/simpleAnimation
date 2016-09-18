@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  TableViewCell.h
 //  PopDemo
 //
-//  Created by  on 16/9/18.
+//  Created by 千锋 on 16/9/18.
 //  Copyright © 2016年 fuugouryoku. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface TableViewCell : UITableViewCell
 
 @end
-
