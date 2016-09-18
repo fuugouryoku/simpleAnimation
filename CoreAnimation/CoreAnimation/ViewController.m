@@ -29,26 +29,34 @@
 {
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 50, 50)];
     [self.view addSubview:view];
+    view.tag = 100;
     view.backgroundColor = [UIColor redColor];
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"position.y";
+    
     animation.toValue = @300;
     //设置时间曲线
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
     animation.duration = 5;
     
+//    animation.repeatCount = CGFLOAT_MAX;
     //动画执行完删除动画
-    animation.removedOnCompletion = YES;
+//    animation.removedOnCompletion = NO;
+//    animation.autoreverses = NO;
+    animation.fillMode = kCAFillModeBackwards;
     
+ //未动画设置代理
+    animation.delegate = self;
     [view.layer addAnimation:animation forKey:@"CABasicAnimation"];
-    
-    
-    
-    
-    
 }
 
+#pragma -动画代理方法
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    UIView *basicAnimationView = [self.view viewWithTag:100];
+    basicAnimationView.layer.backgroundColor = [UIColor greenColor].CGColor ;
+}
 
 
 @end
