@@ -15,6 +15,7 @@
 		BC41B8BA1D8E263000BDAF54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC41B8B81D8E263000BDAF54 /* LaunchScreen.storyboard */; };
 		BC41B8C51D8E263000BDAF54 /* CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41B8C41D8E263000BDAF54 /* CoreAnimationTests.m */; };
 		BC41B8D01D8E263000BDAF54 /* CoreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC41B8CF1D8E263000BDAF54 /* CoreAnimationUITests.m */; };
+		BC41B8DE1D8E38FA00BDAF54 /* satellite.png in Resources */ = {isa = PBXBuildFile; fileRef = BC41B8DD1D8E38FA00BDAF54 /* satellite.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BC41B8CB1D8E263000BDAF54 /* CoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC41B8CF1D8E263000BDAF54 /* CoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationUITests.m; sourceTree = "<group>"; };
 		BC41B8D11D8E263000BDAF54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC41B8DD1D8E38FA00BDAF54 /* satellite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satellite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				BC41B8B31D8E263000BDAF54 /* Main.storyboard */,
 				BC41B8B61D8E263000BDAF54 /* Assets.xcassets */,
 				BC41B8B81D8E263000BDAF54 /* LaunchScreen.storyboard */,
+				BC41B8DD1D8E38FA00BDAF54 /* satellite.png */,
 				BC41B8BB1D8E263000BDAF54 /* Info.plist */,
 				BC41B8AA1D8E263000BDAF54 /* Supporting Files */,
 			);
@@ -246,6 +249,7 @@
 				BC41B8BA1D8E263000BDAF54 /* LaunchScreen.storyboard in Resources */,
 				BC41B8B71D8E263000BDAF54 /* Assets.xcassets in Resources */,
 				BC41B8B51D8E263000BDAF54 /* Main.storyboard in Resources */,
+				BC41B8DE1D8E38FA00BDAF54 /* satellite.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +500,7 @@
 				BC41B8D61D8E263000BDAF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC41B8D71D8E263000BDAF54 /* Build configuration list for PBXNativeTarget "CoreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				BC41B8D91D8E263000BDAF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC41B8DA1D8E263000BDAF54 /* Build configuration list for PBXNativeTarget "CoreAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				BC41B8DC1D8E263000BDAF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
